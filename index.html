@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover The Residences - A modern residential building with luxury units in a prime location. Explore our available units and amenities.">
+    <title>The Residences | Modern Urban Living</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/slider.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/logo.svg" alt="The Residences Logo">
+                </a>
+            </div>
+            <nav class="main-nav">
+                <button class="menu-toggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-list">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#units">Units</a></li>
+                    <li><a href="#location">Location</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#contact" class="btn btn-primary">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="hero">
+            <div class="hero-video-container">
+                <video autoplay muted loop playsinline class="hero-video">
+                    <source src="videos/hero-video.mp4" type="video/mp4">
+                    <!-- Fallback image if video doesn't load -->
+                    <img src="images/hero-fallback.jpg" alt="The Residences Building Exterior">
+                </video>
+                <div class="overlay"></div>
+            </div>
+            <div class="container hero-content">
+                <h1>The Residences</h1>
+                <p class="tagline">Redefining Urban Luxury Living</p>
+                <a href="#units" class="btn btn-large btn-primary">Explore Units</a>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about section-padding" id="about">
+            <div class="container">
+                <div class="section-header">
+                    <h2>About The Residences</h2>
+                    <p>A new standard of modern urban living</p>
+                </div>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>The Residences offers an unparalleled living experience in the heart of the city. Our meticulously designed building features 10 exclusive units, each crafted with premium materials and finishes to create spaces that are both functional and beautiful.</p>
+                        <p>With floor-to-ceiling windows, private balconies, and open-concept layouts, each residence maximizes natural light and provides stunning city views.</p>
+                    </div>
+                    <div class="features-grid">
+                        <div class="feature">
+                            <div class="feature-icon">
+                                <img src="images/icons/location.svg" alt="Location icon">
+                            </div>
+                            <h3>Prime Location</h3>
+                            <p>Situated in the heart of the city with easy access to transportation, dining, and entertainment</p>
+                        </div>
+                        <div class="feature">
+                            <div class="feature-icon">
+                                <img src="images/icons/design.svg" alt="Design icon">
+                            </div>
+                            <h3>Modern Design</h3>
+                            <p>Contemporary architecture with premium finishes and attention to detail</p>
+                        </div>
+                        <div class="feature">
+                            <div class="feature-icon">
+                                <img src="images/icons/amenities.svg" alt="Amenities icon">
+                            </div>
+                            <h3>Luxury Amenities</h3>
+                            <p>Rooftop terrace, fitness center, concierge service, and secure parking</p>
+                        </div>
+                        <div class="feature">
+                            <div class="feature-icon">
+                                <img src="images/icons/sustainability.svg" alt="Sustainability icon">
+                            </div>
+                            <h3>Sustainable Living</h3>
+                            <p>Energy-efficient systems and eco-friendly materials throughout</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Units Section -->
+        <section class="units section-padding" id="units">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Available Units</h2>
+                    <p>Find your perfect space</p>
+                </div>
+                <div class="units-filter">
+                    <button class="filter-btn active" data-filter="all">All Units</button>
+                    <button class="filter-btn" data-filter="1br">1 Bedroom</button>
+                    <button class="filter-btn" data-filter="2br">2 Bedroom</button>
+                    <button class="filter-btn" data-filter="3br">3 Bedroom</button>
+                    <button class="filter-btn" data-filter="penthouse">Penthouse</button>
+                </div>
+                <div class="units-grid">
+                    <a href="units/unit-1.html" class="unit-card" data-category="1br">
+                        <div class="unit-image">
+                            <img src="images/units/unit-1.jpg" alt="1 Bedroom Urban Suite">
+                            <div class="unit-status available">Available</div>
+                        </div>
+                        <div class="unit-details">
+                            <h3>1 Bedroom Urban Suite</h3>
+                            <p class="unit-size">65 m²</p>
+                            <p class="unit-price">$450,000</p>
+                            <div class="unit-features">
+                                <span>1 Bed</span>
+                                <span>1 Bath</span>
+                                <span>Balcony</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="units/unit-2.html" class="unit-card" data-category="2br">
+                        <div class="unit-image">
+                            <img src="images/units/unit-2.jpg" alt="2 Bedroom City View">
+                            <div class="unit-status available">Available</div>
+                        </div>
+                        <div class="unit-details">
+                            <h3>2 Bedroom City View</h3>
+                            <p class="unit-size">85 m²</p>
+                            <p class="unit-price">$650,000</p>
+                            <div class="unit-features">
+                                <span>2 Beds</span>
+                                <span>2 Baths</span>
+                                <span>Balcony</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="units/unit-3.html" class="unit-card" data-category="2br">
+                        <div class="unit-image">
+                            <img src="images/units/unit-3.jpg" alt="2 Bedroom Corner Suite">
+                            <div class="unit-status reserved">Reserved</div>
+                        </div>
+                        <div class="unit-details">
+                            <h3>2 Bedroom Corner Suite</h3>
+                            <p class="unit-size">95 m²</p>
+                            <p class="unit-price">$720,000</p>
+                            <div class="unit-features">
+                                <span>2 Beds</span>
+                                <span>2 Baths</span>
+                                <span>Wrap-around Balcony</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="units/unit-4.html" class="unit-card" data-category="3br">
+                        <div class="unit-image">
+                            <img src="images/units/unit-4.jpg" alt="3 Bedroom Family Residence">
+                            <div class="unit-status available">Available</div>
+                        </div>
+                        <div class="unit-details">
+                            <h3>3 Bedroom Family Residence</h3>
+                            <p class="unit-size">120 m²</p>
+                            <p class="unit-price">$950,000</p>
+                            <div class="unit-features">
+                                <span>3 Beds</span>
+                                <span>2.5 Baths</span>
+                                <span>Private Terrace</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="units/unit-5.html" class="unit-card" data-category="2br">
+                        <div class="unit-image">
+                            <img src="images/units/unit-5.jpg" alt="2 Bedroom Duplex">
+                            <div class="unit-status available">Available</div>
+                        </div>
+                        <div class="unit-details">
+                            <h3>2 Bedroom Duplex with Balcony</h3>
+                            <p class="unit-size">110 m²</p>
+                            <p class="unit-price">$850,000</p>
+                            <div class="unit-features">
+                                <span>2 Beds</span>
+                                <span>2.5 Baths</span>
+                                <span>Two Floors</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="units/unit-6.html" class="unit-card" data-category="penthouse">
+                        <div class="unit-image">
+                            <img src="images/units/unit-6.jpg" alt="Penthouse Suite">
+                            <div class="unit-status available">Available</div>
+                        </div>
+                        <div class="unit-details">
+                            <h3>Luxury Penthouse Suite</h3>
+                            <p class="unit-size">180 m²</p>
+                            <p class="unit-price">$1,500,000</p>
+                            <div class="unit-features">
+                                <span>3 Beds</span>
+                                <span>3.5 Baths</span>
+                                <span>Private Roof Terrace</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="units-cta">
+                    <a href="#contact" class="btn btn-secondary">Schedule a Viewing</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Location Section -->
+        <section class="location section-padding" id="location">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Prime Location</h2>
+                    <p>Perfectly positioned in the heart of the city</p>
+                </div>
+                <div class="location-content">
+                    <div class="map-container">
+                        <div id="map" class="map"></div>
+                    </div>
+                    <div class="location-details">
+                        <div class="address">
+                            <h3>Address</h3>
+                            <p>123 Urban Avenue<br>City Center, 10001</p>
+                        </div>
+                        <div class="nearby-amenities">
+                            <h3>Nearby Amenities</h3>
+                            <ul class="amenities-list">
+                                <li>
+                                    <img src="images/icons/transit.svg" alt="Transit icon">
+                                    <span>Central Station (5 min walk)</span>
+                                </li>
+                                <li>
+                                    <img src="images/icons/park.svg" alt="Park icon">
+                                    <span>City Park (8 min walk)</span>
+                                </li>
+                                <li>
+                                    <img src="images/icons/shopping.svg" alt="Shopping icon">
+                                    <span>Shopping District (10 min walk)</span>
+                                </li>
+                                <li>
+                                    <img src="images/icons/dining.svg" alt="Dining icon">
+                                    <span>Restaurant Row (7 min walk)</span>
+                                </li>
+                                <li>
+                                    <img src="images/icons/school.svg" alt="School icon">
+                                    <span>International School (12 min walk)</span>
+                                </li>
+                                <li>
+                                    <img src="images/icons/hospital.svg" alt="Hospital icon">
+                                    <span>Medical Center (15 min walk)</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section class="gallery section-padding" id="gallery">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Building Gallery</h2>
+                    <p>Experience the beauty of The Residences</p>
+                </div>
+                <div class="gallery-slider">
+                    <div class="slider-container">
+                        <div class="slider-track">
+                            <div class="slide">
+                                <img src="images/gallery/exterior-1.jpg" alt="Building Exterior">
+                            </div>
+                            <div class="slide">
+                                <img src="images/gallery/lobby.jpg" alt="Building Lobby">
+                            </div>
+                            <div class="slide">
+                                <img src="images/gallery/rooftop.jpg" alt="Rooftop Terrace">
+                            </div>
+                            <div class="slide">
+                                <img src="images/gallery/fitness.jpg" alt="Fitness Center">
+                            </div>
+                            <div class="slide">
+                                <img src="images/gallery/lounge.jpg" alt="Resident Lounge">
+                            </div>
+                            <div class="slide">
+                                <img src="images/gallery/exterior-2.jpg" alt="Building Exterior Night">
+                            </div>
+                        </div>
+                        <button class="slider-arrow prev" aria-label="Previous slide">&#10094;</button>
+                        <button class="slider-arrow next" aria-label="Next slide">&#10095;</button>
+                    </div>
+                    <div class="slider-dots"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact section-padding" id="contact">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Contact Us</h2>
+                    <p>Get in touch to learn more or schedule a viewing</p>
+                </div>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="contact-method">
+                            <img src="images/icons/phone.svg" alt="Phone icon">
+                            <h3>Call Us</h3>
+                            <p>(555) 123-4567</p>
+                        </div>
+                        <div class="contact-method">
+                            <img src="images/icons/email.svg" alt="Email icon">
+                            <h3>Email Us</h3>
+                            <p>info@theresidences.com</p>
+                        </div>
+                        <div class="contact-method">
+                            <img src="images/icons/visit.svg" alt="Visit icon">
+                            <h3>Visit Us</h3>
+                            <p>Sales Office: 123 Urban Avenue<br>Open Daily: 10am - 6pm</p>
+                        </div>
+                    </div>
+                    <div class="contact-form-container">
+                        <form id="contact-form" class="contact-form">
+                            <div class="form-group">
+                                <label for="name">Full Name</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="interest">I'm interested in</label>
+                                <select id="interest" name="interest">
+                                    <option value="1br">1 Bedroom Units</option>
+                                    <option value="2br">2 Bedroom Units</option>
+                                    <option value="3br">3 Bedroom Units</option>
+                                    <option value="penthouse">Penthouse</option>
+                                    <option value="general">General Information</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="4"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="images/logo-white.svg" alt="The Residences Logo">
+                </div>
+                <div class="footer-links">
+                    <div class="footer-nav">
+                        <h4>Navigation</h4>
+                        <ul>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#units">Units</a></li>
+                            <li><a href="#location">Location</a></li>
+                            <li><a href="#gallery">Gallery</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-legal">
+                        <h4>Legal</h4>
+                        <ul>
+                            <li><a href="privacy.html">Privacy Policy</a></li>
+                            <li><a href="terms.html">Terms of Use</a></li>
+                            <li><a href="disclaimer.html">Disclaimer</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-social">
+                        <h4>Connect With Us</h4>
+                        <div class="social-icons">
+                            <a href="#" aria-label="Facebook"><img src="images/icons/facebook.svg" alt="Facebook"></a>
+                            <a href="#" aria-label="Instagram"><img src="images/icons/instagram.svg" alt="Instagram"></a>
+                            <a href="#" aria-label="Twitter"><img src="images/icons/twitter.svg" alt="Twitter"></a>
+                            <a href="#" aria-label="LinkedIn"><img src="images/icons/linkedin.svg" alt="LinkedIn"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 The Residences. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/map.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
+</body>
+</html>
